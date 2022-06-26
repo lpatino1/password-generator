@@ -62,7 +62,7 @@ function generatePassword(){
 function getParameters(){
 //have this function update the global variables
 //set length via prompt
-  let length = prompt("Input character length: "+ "\nMinimum character length: 8" + "\nMaximum Character length: 128");
+  length = prompt("Input character length: "+ "\nMinimum character length: 8" + "\nMaximum Character length: 128");
   console.log(length);
 //add characters to availableCharacters via user input (WINDOW CONFIRM)
   if(length<8 || length>128){
@@ -85,5 +85,5 @@ function getParameters(){
       lowerCase = "false";
     }
   }
-  return length;
+  // return length;
 }
